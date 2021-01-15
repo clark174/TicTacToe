@@ -3,7 +3,7 @@ const statusDisplay = document.querySelector('.gameStatus');
 let gameActive=true;
 let currentPlayer = "X";
 let gameState = ["", "", "", "", "", "", "", "", ""];
-let computer = "";
+let computer = "easy";
 const drawMessage = () => `Game ended in a draw!`;
 const winningConditions = [
 	[0,1,2],
@@ -17,6 +17,7 @@ const winningConditions = [
 ];
 
 statusDisplay.innerHTML = currentPlayerTurn();
+document.querySelector(".easy").style.background = "#9494b8";
 
 function currentPlayerTurn()
 {
@@ -116,7 +117,6 @@ function handleRestartGame()
 function handleEasyGame()
 {
  handleRestartGame();
- console.log("easy");
  document.querySelector(".easy").style.background = "#9494b8";
  document.querySelector(".medium").style.background = "#ededed";
  document.querySelector(".hard").style.background = "#ededed";
