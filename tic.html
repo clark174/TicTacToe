@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta name="description" content="TicTacToe">
+  <meta name="author" content="Jimmy Clark">
+ 
+  <title>Tic-Tac-Toe</title>
+  
+  <link rel="stylesheet" type="text/css" href="tic.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ </head>
+ <body>
+  <div id="main">
+   <h1>Tic-Tac-Toe</h1>
+    <div class="gameBoard">
+      <div data-cell-index="0" class="cell"></div>
+      <div data-cell-index="1" class="cell"></div>
+      <div data-cell-index="2" class="cell"></div>
+      <div data-cell-index="3" class="cell"></div>
+      <div data-cell-index="4" class="cell"></div>
+      <div data-cell-index="5" class="cell"></div>
+      <div data-cell-index="6" class="cell"></div>
+      <div data-cell-index="7" class="cell"></div>
+      <div data-cell-index="8" class="cell"></div>
+    </div>
+    <h2 class="gameStatus"></h2>
+    <button class="restart">Restart Game</button>
+    <div class="difficulty">
+     <h3>Choose Difficulty:</h3>
+     <button class="easy">Easy</button>
+     <button class="medium">Medium</button>
+     <button class="hard">Hard</button>
+     <button class="impossible">Impossible</button>
+     <button class="multiplayer">Multiplayer</button>
+    </div>
+  </div>
+  <script src="tic.js" type="text/javascript"></script>
+ </body>
+</html>
